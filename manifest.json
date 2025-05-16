@@ -1,14 +1,20 @@
 {
-  "name": "YouTube Gesture Receiver",
+  "name": "YouTube Gesture Controller",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Receives gesture commands via WebSocket and controls YouTube",
+  "description": "Control YouTube using hand gestures via WebSocket communication.",
   "permissions": ["scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
+  "icons": {
+    "128": "icon.jpg"
+  },
   "action": {
-    "default_title": "YT Gesture Ctrl"
+    "default_icon": {
+      "128": "icon.jpg"
+    },
+    "default_title": "YT Gesture Controller"
   }
 }
