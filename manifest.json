@@ -1,0 +1,14 @@
+{
+  "name": "YouTube Gesture Receiver",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Receives gesture commands via WebSocket and controls YouTube",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "YT Gesture Ctrl"
+  }
+}
